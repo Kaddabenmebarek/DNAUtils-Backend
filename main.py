@@ -16,7 +16,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 origins = [
-    "http://localhost:3000",
+    "https://cute-sunflower-c9e335.netlify.app",
 ]
 app.add_middleware(
     CORSMiddleware,
