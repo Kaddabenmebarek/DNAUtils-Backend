@@ -23,10 +23,6 @@ class DnaUtils:
                 return False
         return tmp_seq
         #return set(NUCLEOTIDES[self.seq_type]).issuperset(self.seq)
-    
-    def generate_random_seq(self, lenght=10, seq_type="DNA"):
-        seq = "".join(random.choice(NUCLEOTIDES[seq_type]) for nuc in range(lenght))
-        self.__init__(seq, seq_type, "Randomly generated seq")
 
     def nucleotide_frequemcy(self):
         freq_dic = {"A":0, "T":0, "C":0, "G":0, "U":0}
